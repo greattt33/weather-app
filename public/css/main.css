@@ -1,0 +1,59 @@
+#site{
+	display:grid;
+	background-color:ivory;
+	width:100vw;
+	height:100vh;
+	grid-template-columns:1fr;
+	grid-template-rows:auto auto;
+	place-items:center;
+	grid-template-areas:"form"
+						"result";
+}
+#header{
+	grid-area:"form";
+	display:grid;
+	place-items:center;
+	border-radius:10px;
+	width:50vw;
+	height:auto;
+	background-color:midnightblue;
+	border:1px blue solid;
+	box-shadow:3px 3px lightgray;
+}
+.cities{
+	grid-area:"result";
+	width:50vw;
+	display:grid;
+	place-items:center;
+	height:auto;
+	border:1px blue solid;
+	color:midnightblue;
+	border-radius:10px;
+	box-shadow:3px 3px lightgray;
+	background-color:snow;
+}
+label{
+	display:block;
+}
+
+input{
+	margin:5px;
+	height:30px;
+	width:30vw;
+	border:1px solid blue;
+	border-radius:5px;
+	color:white;
+	background-color:midnightblue;
+	border-bottom:1px red solid;
+}
+button{
+	border:1px solid lightgray;
+	background-color:red;
+	border-radius:5px;
+	height:30px;
+	color:white;
+}
+button:hover{
+	background-color:white;
+	color:midnightblue;
+}

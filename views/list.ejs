@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>weather api practics</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href="css\main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="site">
+		<div id="header">
+			<form action="/" method="post">
+				<label for="cityName">
+					<input type="text"placeholder="city name" name="cityName" autocomplete="off">
+				</label>
+				<button name="send" type="submit">send</button>
+			</form>
+		</div>
+		<div class="cities">
+			<p><h3><%= Name %></h3></p>
+			<p>Temperature <%= Temperature %></p>
+			<p>Visibility <%= Visibility %></p>
+			<p>Pressure <%= Pressure %></p>
+			<p>Timezone <%= Timezone %></p>
+		</div>
+	</div>
+  <script src="C:\Users\webzone\Desktop\web development\api practices\index.js"></script>
+</body>
+</html>
