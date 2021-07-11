@@ -18,7 +18,7 @@ var temperature=[];
 var humidity=[];
 var weatherDescription=[];
 var visilibity_see=[];
-app.get("/index.html",function(request,response){
+app.get("/",function(request,response){
 	response.sendFile(__dirname+"/")
 	response.render("list",{
 		Name:city_name[0],
@@ -32,7 +32,7 @@ app.get("/index.html",function(request,response){
 	})
 	
 });
-app.post("/index.html",function(request,response){
+app.post("/",function(request,response){
 	const inputVal= request.body.cityName;
 	const apiKey="2a7eed412237d5674307d0eaab756796";
 	const url="https://api.openweathermap.org/data/2.5/weather?q="+ inputVal +"&appid="+ apiKey +"&units=metric";
@@ -55,7 +55,7 @@ app.post("/index.html",function(request,response){
 		
 	});	
 		
-		response.redirect("/index.html");
+		response.redirect("/");
 });
 app.listen(process.env.PORT||3000,function(){
 	console.log("server is working");
