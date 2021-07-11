@@ -57,6 +57,6 @@ app.post("/index.html",function(request,response){
 		
 		response.redirect("/index.html");
 });
-app.listen(3000,function(){
+app.listen(process.env.PORT||3000,function(){
 	console.log("server is working");
 });
