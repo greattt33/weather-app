@@ -52,10 +52,10 @@ app.post("/",function(request,response){
 			
 		})
 		response.send();
+		response.redirect("/");
 		
 	});	
 		
-		response.redirect("/");
 });
 app.listen(process.env.PORT||3000,function(){
 	console.log("server is working");
